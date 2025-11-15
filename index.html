@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="side-image left-frame">
+        <img src="image1.png" alt="Left Placeholder" class="framed-img">
+    </div>
+    <div class="side-image right-frame">
+        <img src="image4.png" alt="Right Placeholder" class="framed-img">
+    </div>
+    
+    <!-- Horizontal frames positioned below vertical frames -->
+    <div class="horizontal-frame horizontal-frame-left">
+        <img src="image3.png" alt="Horizontal Placeholder 1" class="horizontal-placeholder">
+    </div>
+    <div class="horizontal-frame horizontal-frame-right">
+        <img src="image2.png" alt="Horizontal Placeholder 2" class="horizontal-placeholder">
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Start</button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area">Evelyn</div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Happy 20th <i id="nae">Evelyn</i></h2>
+                            <h2>Have a wonderful day</h2>
+                            <h2>Get plastered!</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-3 cake">
+                    <img src="img/cake.gif" alt="">
+                    <img src="sticky.png" alt="Sticky Note" class="sticky-note-img" style="display:block;margin:-40px auto 0;max-width:180px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bday-letter-modal" class="modal-overlay" style="display:none;">
+      <div class="modal-content">
+        <img src="bday-letter.png" alt="Birthday Letter" style="max-width:90vw; max-height:90vh; border-radius:20px; box-shadow:0 6px 36px #9576B3;">
+      </div>
+    </div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
